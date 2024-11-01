@@ -64,3 +64,4 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+.mvn/wrapper/
