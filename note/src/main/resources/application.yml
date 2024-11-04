@@ -1,7 +1,7 @@
 spring:
   application:
     name: note
-#优雅停机时间
+#优雅停机时间默认30s
   lifecycle:
     timeout-per-shutdown-phase: 2m
 
