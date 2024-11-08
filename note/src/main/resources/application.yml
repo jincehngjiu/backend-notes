@@ -4,7 +4,13 @@ spring:
 #优雅停机时间默认30s
   lifecycle:
     timeout-per-shutdown-phase: 2m
+  datasource:
+    url: jdbc:mysql://ip:3333/hahah?useUnicode=true&characterEncoding=UTF-8&useSSL=false&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: hjkhj
+    password: jhkhjk
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 #优雅停机
 server:
   shutdown: graceful
+  port: 9876
