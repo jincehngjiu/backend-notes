@@ -10,7 +10,7 @@ import java.util.Set;
  * @author 10191245
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class ListUtils {
+public final class ListUtils {
 
     public static <T> List<T> safeSetToList(Set<T> set) {
         return set != null ? new ArrayList<>(set) : new ArrayList<>();
