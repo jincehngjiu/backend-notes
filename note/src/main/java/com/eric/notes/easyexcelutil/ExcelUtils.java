@@ -3,6 +3,8 @@ package com.eric.notes.easyexcelutil;
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
+import com.eric.notes.builder.Example;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,5 +29,9 @@ public class ExcelUtils {
         }).sheet().doRead();
 
         return dataList;
+    }
+
+    public static void main(String[] args) {
+        Example build = Example.Builder.getInstance().build();
     }
 }
