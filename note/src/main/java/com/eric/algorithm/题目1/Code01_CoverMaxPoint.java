@@ -43,10 +43,15 @@ public class Code01_CoverMaxPoint {
             while (right <N && arr[right] - arr[left] <= l) {
                 right++;
             }
-            max = Math.max(max, right - (left++));
+            max = Math.max(max, (right-1) - left +1);
+            left++;
 
         }
         return max;
+    }
+
+    public static void main(String[] args) {
+        maxPoint2(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, 3);
     }
 
 }
